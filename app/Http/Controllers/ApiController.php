@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Survey;
 
 class ApiController extends Controller
 {
-    public function getAllData() {
-        $data = Data::get()->toJson(JSON_PRETTY_PRINT);
-        return response($data, 200);
+    public function index()
+    {
+        $data = Survey::all();
+
+        return response()->json([
+            'data' => $data
+        ]);
     }
 }

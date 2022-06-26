@@ -24,4 +24,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::post('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/graph', [App\Http\Controllers\GraphController::class, 'index'])->name('graph');
+
+Route::get('/health', [App\Http\Controllers\HealthController::class, 'index'])->name('health');
+
+Route::get('/investments', [App\Http\Controllers\InvestmentsController::class, 'index'])->name('investments');
+
+Route::get('/taxdeclaration', [App\Http\Controllers\TaxdeclarationController::class, 'index'])->name('taxdeclaration');
+
+
 Route::post('save', [SurveyController::class, 'saveData']);

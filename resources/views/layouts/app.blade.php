@@ -84,11 +84,11 @@
             @else
                 <div class="col-1 d-flex justify-content-center">
                     <div class="list-group list-group-flush">
-                        <a href="#" class="list-group-item list-group-item-action border">Мои данные</a>
-                        <a href="#" class="list-group-item list-group-item-action border">Расчитать</a>
-                        <a href="#" class="list-group-item list-group-item-action border">Инвестиции</a>
-                        <a href="#" class="list-group-item list-group-item-action border">Здоровье</a>
-                        <a href="#" class="list-group-item list-group-item-action border">Нал.декларация</a>
+                        <a href="home" class="list-group-item list-group-item-action border">Мои данные</a>
+                        <a href="graph" class="list-group-item list-group-item-action border">Расчитать</a>
+                        <a href="investments" class="list-group-item list-group-item-action border">Инвестиции</a>
+                        <a href="health" class="list-group-item list-group-item-action border">Здоровье</a>
+                        <a href="taxdeclaration" class="list-group-item list-group-item-action border">Нал.декларация</a>
                     </div>
                 </div>
             @endguest

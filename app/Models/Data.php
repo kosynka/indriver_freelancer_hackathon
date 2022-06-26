@@ -9,5 +9,5 @@ class Data extends Model
 {
     use HasFactory;
 
-    protected $table = 'data';
+    protected $fillable = ['type', 'actual_mileage', 'work_days', 'petrol_per_day', 'average_monthly_income', 'fin_goal'];
 }

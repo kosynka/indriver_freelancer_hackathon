@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('Для продолжения работы с сайтом пройдите небольшой опрос') }}
+                    {{ __('Введите ваши данные для Прогноза ваших доходов и контроля денег') }}
 
                     {{-- survey section start --}}
                     
@@ -24,49 +24,49 @@
                             @csrf
                             <p class="fw-bold">Вопрос 1. Вы льготник?</p>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="ussr_hero" id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" name="type" value="ussr_hero" id="flexCheckDefault" />
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Герой СССР
                                 </label>
                             </div>
                           
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="wwt_veteran" id="flexCheckDefault2" />
+                                <input class="form-check-input" type="checkbox" name="type" value="wwt_veteran" id="flexCheckDefault2" />
                                 <label class="form-check-label" for="flexCheckDefault2">
                                     Ветеран Великой Отечественной войны
                                 </label>
                             </div>
                           
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="orphan" id="flexCheckDefault3" />
+                                <input class="form-check-input" type="checkbox" name="type" value="orphan" id="flexCheckDefault3" />
                                 <label class="form-check-label" for="flexCheckDefault3">
                                     Сирота
                                 </label>
                             </div>
                             
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="invalid_kid_parent" id="flexCheckDefault3" />
+                                <input class="form-check-input" type="checkbox" name="type" value="invalid_kid_parent" id="flexCheckDefault3" />
                                 <label class="form-check-label" for="flexCheckDefault3">
                                     Родитель ребенка инвалида
                                 </label>
                             </div>
                             
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="mother_hero" id="flexCheckDefault3" />
+                                <input class="form-check-input" type="checkbox" name="type" value="mother_hero" id="flexCheckDefault3" />
                                 <label class="form-check-label" for="flexCheckDefault3">
                                     Мать героиня(многодетная мать)
                                 </label>
                             </div>
                             
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="with_tax_objects" id="flexCheckDefault3" />
+                                <input class="form-check-input" type="checkbox" name="type" value="with_tax_objects" id="flexCheckDefault3" />
                                 <label class="form-check-label" for="flexCheckDefault3">
                                     ИП с объектами налогообложения
                                 </label>
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="ind_who_rent_room" id="flexCheckDefault3" />
+                                <input class="form-check-input" type="checkbox" name="type" value="ind_who_rent_room" id="flexCheckDefault3" />
                                 <label class="form-check-label" for="flexCheckDefault3">
                                     Физ.лица которые снимают комнату
                                 </label>
@@ -74,37 +74,37 @@
 
                             <p class="fw-bold">Вопрос 2. Пробег авто?</p>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control" placeholder="50000" aria-label="actual_mileage" required>
+                                <input type="number" class="form-control" placeholder="50000" name="actual_mileage" aria-label="actual_mileage" required>
                                 <span class="input-group-text">км</span>
                             </div>
 
                             <p class="fw-bold">Вопрос 3. Сколько дней в среднем работаете в месяц?</p>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control" placeholder="22" aria-label="work_days" required>
+                                <input type="number" class="form-control" placeholder="22" name="work_days" aria-label="work_days" required>
                             </div>
 
                             <p class="fw-bold">Вопрос 4. Сколько бензина в среднем тратите в день?</p>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control" placeholder="10" aria-label="petrol_per_day" required>
+                                <input type="number" class="form-control" placeholder="10" name="petrol_per_day" aria-label="petrol_per_day" required>
                                 <span class="input-group-text">л</span>
                             </div>
 
                             <p class="fw-bold">Вопрос 5. Цена вашей машины(цена за которую покупали) без учета инфляции?</p>
                             <div class="input-group mb-3">
                                 <span class="input-group-text">₸</span>
-                                <input type="number" class="form-control" placeholder="5500000" aria-label="primary_cost" required>
+                                <input type="number" class="form-control" placeholder="5500000" name="primary_cost" aria-label="primary_cost" required>
                             </div>
 
                             <p class="fw-bold">Вопрос 6. Сколько денег в месяц получаете после оплаты комиссии InDriver?</p>
                             <div class="input-group mb-3">
                                 <span class="input-group-text">₸</span>
-                                <input type="number" class="form-control" placeholder="250000" aria-label="average_monthly_income" required>
+                                <input type="number" class="form-control" placeholder="250000" name="average_monthly_income" aria-label="average_monthly_income" required>
                             </div>
 
                             <p class="fw-bold">Вопрос 7. Какая у Вас финансовая цель?</p>
                             <div class="input-group mb-3">
                                 <span class="input-group-text">₸</span>
-                                <input type="number" class="form-control" placeholder="5000000" aria-label="fin_goal" required>
+                                <input type="number" class="form-control" placeholder="5000000" name="fin_goal" aria-label="fin_goal" required>
                             </div>
 
                             <div class="text-end">
